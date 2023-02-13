@@ -79,7 +79,7 @@ body{
 
 .navigation ul li a .icon{
     position: relative;
-    display: block;
+    display: block; 
     min-width: 60px;
     height: 60px;
     line-height: 78px;
@@ -215,7 +215,7 @@ body{
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.37);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.219);
 }
 
 .cardBox .card .number{
@@ -251,19 +251,19 @@ body{
 /* Transaction/Exchange History */
 .details{
     position: relative;
-    width: 100%;
+    width: 113%;
     padding: 20px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
-    margin-top: 10px;
+    margin-top: 14px;
     top: 50px;
     left: 320px;
     transition: .5s ease;
 }
 
 .details.active{
-    width: calc(100% - 80px);
+    width: calc(113% - 80px);
     left: 250px;
 
 }
@@ -275,7 +275,7 @@ body{
     min-height: 500px;
     background: var(--white);
     padding: 20px;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.26);
     border-radius: 20px;
 }
 
@@ -476,7 +476,7 @@ body{
   }
   
   .disappear{
-    animation: vanish 3s forwards;
+    animation: vanish 1s forwards;
   }
   @keyframes vanish{
     100%{
