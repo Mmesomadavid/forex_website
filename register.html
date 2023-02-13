@@ -68,7 +68,7 @@
                     <div class="input-field">
                         <input 
                           type="text" 
-                          placeholder="Enter your name" 
+                          placeholder="Enter your User Name" 
                           id="username" 
                           name="username"
                           required>
@@ -83,6 +83,8 @@
                           required>
                         <i class="uil uil-envelope icon"></i>
                     </div>
+
+
                     <div class="input-field">
                         <input 
                           type="password" 
@@ -103,6 +105,17 @@
                           required>
                         <i class="uil uil-lock icon"></i>
                         <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="input-field">
+                        <input 
+                          type="email" 
+                          class="refer" 
+                          id="refer" 
+                          name="email"
+                          placeholder="Refer a friend (@mail.com)" 
+                          required>
+                          <ion-icon name="person-add-outline"></ion-icon>
                     </div>
 
                     <div class="checkbox-text">
@@ -133,20 +146,17 @@
     </div>
 
 
-     <!-- firebase user authentication  -->
-     <!-- The core firebase Js SDK is always required and must be listed first -->
-     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
-     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
-        
+  
 
-     <!-- Our script must be loaded after firebase reference -->
-     <script src="/USER_DASH/js/index.js"></script>
-
+<!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
     <!-- javascript code link -->
     <script src="/assets/js/register.js"></script>
-    <script src="/newNodeAuth-main/index.js"></script>
     <script>
 
     </script>
