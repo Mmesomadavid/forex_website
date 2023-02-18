@@ -1,15 +1,13 @@
-// adding hovered class to selected list
-// let list = document.querySelectorAll(".navigation li");
+// fetching single user profile
+document.addEventListener("DOMContentLoaded", () => {
+  if(!localStorage.getItem("fxMasterUser")) return location = "/register.html";
+  const {_id, username, email, deposit, withdraw, referralBonus, isAdmin} = JSON.parse(localStorage.getItem("fxMasterUser"))
+  if(isAdmin) return location = "/ADMIN_DASH/Admin_dash.html";
+  document.getElementById("username").innerHTML = username;
+  document.getElementById("bal").innerHTML = deposit + referralBonus;
+  console.log(_id, username, email, deposit, withdraw, referralBonus)
+});
 
-
-// function activeLink(){
-//     list.forEach(item=>{
-//         item.classList.remove("hovered");
-//     });
-//     this.classList.add("hovered");
-// }
-
-// list.forEach((item) => item.addEventlistener("mouseover", activeLink));
 
 // Menu Toogle
 let toggle = document.querySelector(".toggle");
@@ -37,4 +35,9 @@ toggle.onclick = function() {
     
     function vanish() {
       loader.classList.add("disappear");
+    }
+
+    function handleSignOut() {
+      localStorage.removeItem('fxMasterUser')
+      location = "/register.html";
     }
